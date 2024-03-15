@@ -1,6 +1,8 @@
 # SRB2LuaDocs
 (Work in progress) Now you can have [SRB2](https://www.srb2.org/)'s functions syntax highlighting in your favourite code editor, and not just [SLADE](slade.mancubus.net/).
 
+Source: https://wiki.srb2.org/wiki/Lua/Functions
+
 ## How do I download just the LUA?
 View it here in github -> Raw -> Right Click -> Save as file
 
