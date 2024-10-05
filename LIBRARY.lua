@@ -248,4 +248,25 @@ fixround = function(a) return end
 -- Miscellaneous
 -- These are simple yet specialized functions that do not fit within the base library.
 
--- A
+--- For a given [sector type number](https://wiki.srb2.org/wiki/Sector_types) `special` and a sector type group `section` (expected to be a value between 1 and 4), returns the number of the sector effect from section that `special` uses, or 0 if no effect from this group is used. The output values range from 0 to 15 – see [Sector types](https://wiki.srb2.org/wiki/Sector_types) for a list of sector effects and their corresponding effect numbers.
+---
+--- *Example: If the sector `sector` uses the [Damage (Fire)]() sector special from Group 1, `GetSecSpecial(sector.special, 1)` will return 3.*
+--- @param special int
+--- @param section int
+--- @return int
+GetSecSpecial = function(special, section) return end
+
+--- Returns true if `flags` contains all the [emerald](https://wiki.srb2.org/wiki/Chaos_Emerald) flags from `EMERALD1` to `EMERALD7`. Intended to be used for checking either the Single Player/Co-op emeralds collected by all players (`emeralds`), or the multiplayer emeralds (for gametypes [Match](https://wiki.srb2.org/wiki/Match), [CTF](https://wiki.srb2.org/wiki/CTF) and [Tag](https://wiki.srb2.org/wiki/Tag)) collected by a particular player (`player.powers[pw_emeralds]`).
+--- @param flags int
+--- @return boolean
+All7Emeralds = function(flags) return end
+
+--- Returns both the [opposite skin color](https://wiki.srb2.org/wiki/List_of_skin_colors#Skin_color_opposites) for `color`, and the associated sprite frame number for the opposite color (the latter is used for the [Level End Sign](https://wiki.srb2.org/wiki/Level_End_Sign)).
+--- 
+--- *Example: ColorOpposite(SKINCOLOR_WHITE) will return the values SKINCOLOR_BLACK and 10.*
+--- @param color int
+--- @return int, int
+ColorOpposite = function(color) return end
+
+-- Easing functions
+-- TODO: Add documentation
