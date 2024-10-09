@@ -14,6 +14,7 @@
 
 FRACBITS = 16
 FRACUNIT = 1<<FRACBITS --The basic unit of measurement for lengths, speeds, Object scales and sometimes angles. Values for these measurements are interpreted as fixed-point numbers with `FRACUNIT` as the base unit, i.e., `FRACUNIT` represents one unit (or in some cases one pixel), `2*FRACUNIT` represents 2.0 units, `FRACUNIT/2` represents 0.5 units, and so on.
+FU = FRACUNIT
 TICRATE = 35 --The number of tics in a second, i.e., anything multiplied by this value is a measurement in seconds.
 MUSICRATE = 1000
 RING_DIST = 512*FRACUNIT
